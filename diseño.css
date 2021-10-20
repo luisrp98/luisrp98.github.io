@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: wheat;
+}
+h1,
+h2 {
+  text-align: center;
+}
+/* Titulo */
+.avatar {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: 1px solid black;
+}
+
+.avatar img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.cont {
+  padding: 5%;
+  border: 1px solid black;
+}
+.skills {
+  display: flex;
+}
+.softs,
+.languages {
+  width: 50%;
+}
