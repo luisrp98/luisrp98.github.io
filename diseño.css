@@ -20,7 +20,7 @@ h2 {
 .principal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 100px 1fr 1fr 1fr 1fr;
   gap: 10px;
   justify-items: center;
   background-color: whitesmoke;
@@ -35,6 +35,10 @@ h2 {
   width: 300px;
   border-radius: 50%;
 }
+.nombre {
+  grid-column: 2;
+  grid-row: 2;
+}
 /* */
 
 /* Contenido */
@@ -42,8 +46,9 @@ h2 {
 .intro {
   /* Posicion */
   grid-column: 1/4;
-  grid-row: 2;
+  grid-row: 3;
 
+  /* Diseño */
   padding: 0px 40px 0px 40px;
   color: white;
   background-color: black;
@@ -52,7 +57,7 @@ h2 {
 .skills {
   /* Posicion */
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 4;
 
   /* Grid interior */
   display: grid;
@@ -78,27 +83,70 @@ h2 {
 .proyectos {
   /* Posicion */
   grid-column: 1/4;
-  grid-row: 4;
+  grid-row: 5;
+
+  /* Diseño */
+
+  padding: 0px 40px 0px 40px;
+  background-color: black;
+  color: white;
 }
 .contacto {
   /* Posicion */
   grid-column: 1/4;
-  grid-row: 5;
+  grid-row: 6;
+
+  /* Grid interior */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 1fr;
+  justify-items: center;
+}
+.contacto h2 {
+  /* Posicion */
+  grid-column: 1 /5;
+}
+.video {
 }
 /* */
 
 /* Imagenes */
 .imgsoft {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
 }
 .imgsoft img {
   width: 300px;
 }
 .lang {
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 4;
 }
 .lang img {
   width: 300px;
 }
+
+/* Iconos contacto*/
+.icon_tw {
+  grid-column: 1;
+  grid-row: 2;
+}
+.icon_tw img {
+  width: 100px;
+}
+.icon_git {
+  grid-column: 2;
+  grid-row: 2;
+}
+.icon_git img {
+  width: 100px;
+}
+.icon_lk {
+  grid-column: 3;
+  grid-row: 2;
+}
+.icon_lk img {
+  width: 100px;
+}
+/* */
+/* */
