@@ -106,6 +106,9 @@ a {
   width: 100vw;
   justify-items: center;
 }
+.contacto a {
+  color: black;
+}
 .contacto h2 {
   /* Posicion */
   grid-column: 1 /5;
