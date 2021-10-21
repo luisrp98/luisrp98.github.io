@@ -1,32 +1,106 @@
 body {
-  margin: 0;
   background-color: wheat;
 }
-h1,
+/*h1,
 h2 {
   text-align: center;
-}
-/* Titulo */
-.avatar {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
+}*/
+/*QUITAR*/
+.cont {
   border: 1px solid black;
 }
 
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+/* Avatar */
+.avatar {
+  grid-column: 2;
+  grid-row: 1;
+}
 .avatar img {
-  width: 20%;
+  width: 300px;
   border-radius: 50%;
 }
+/* */
+/* Contenido */
+.intro {
+  grid-column: 1/4;
+  grid-row: 2;
+}
 
-.cont {
-  padding: 5%;
+.skills {
+  grid-column: 2;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.skills h2 {
+  grid-column: 1 /3;
+}
+.skills .softs {
+  grid-column: 1;
+  grid-row: 2;
+}
+.skills .languages {
+  grid-column: 2;
+  grid-row: 2;
+}
+/* */
+/* Imagenes */
+.imgsoft {
+  grid-column: 1;
+  grid-row: 3;
+}
+.imgsoft img {
+  width: 300px;
+}
+.lang {
+  grid-column: 3;
+  grid-row: 3;
+}
+.lang img {
+  width: 300px;
+}
+/* Titulo */
+/* .todo {
+  position: relative;
+  width: 100wh;
+  height: 100vh;
+}
+.avatar {
   border: 1px solid black;
+  position: absolute;
+  left: 42%;
+  top: 30px;
+}
+.avatar img {
+  width: 200px;
+  border-radius: 50%;
+  left: 50%;
+}
+.intro {
+  margin-top: 35%;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+}
+.cuerpo {
+  position: absolute;
+  left: 5%;
+  right: 5%;
 }
 .skills {
   display: flex;
 }
+
 .softs,
 .languages {
   width: 50%;
-}
+} */
