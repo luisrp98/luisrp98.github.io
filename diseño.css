@@ -99,14 +99,13 @@ h2 {
   /* Grid interior */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100vw;
   justify-items: center;
 }
 .contacto h2 {
   /* Posicion */
   grid-column: 1 /5;
-}
-.video {
 }
 /* */
 
